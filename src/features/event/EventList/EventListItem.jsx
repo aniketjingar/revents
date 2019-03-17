@@ -33,6 +33,7 @@ export default class EventListItem extends Component {
                   </List>
                 </Segment>
                 <Segment clearing>
+                  <span>Description wil go here.</span> 
                   <Button as="a" color="teal" floated="right" content="View" />
                 </Segment>
               </Segment.Group>

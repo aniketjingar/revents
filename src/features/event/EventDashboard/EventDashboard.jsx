@@ -115,7 +115,7 @@ class EventDashboard extends Component {
   }
 
   render() {
-    const {selectedEvent} = this.state;
+    //const {selectedEvent} = this.state;
     return (
         <Grid>
             <Grid.Column width={10}>
@@ -124,7 +124,7 @@ class EventDashboard extends Component {
             <Grid.Column width={6}>
               <Button onClick={this.handleFormOpen} positive content="Create Event"/>
               {this.state.isOpen &&
-              <EventForm updateEvent={this.handleUpdateEvent} selectedEvent={selectedEvent} createEvent={this.handleCreateEvent} handleCancel = {this.handleCancel}/>}
+              <EventForm updateEvent={this.handleUpdateEvent} selectedEvent={this.state.selectedEvent} createEvent={this.handleCreateEvent} handleCancel = {this.handleCancel}/>}
             </Grid.Column>
         </Grid>
     );

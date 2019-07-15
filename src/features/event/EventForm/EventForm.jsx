@@ -47,6 +47,7 @@ const category = [
   { key: "travel", text: "Travel", value: "travel" }
 ];
 
+
 const validate = combineValidators({
   title: isRequired({ message: "The event title is required" }),
   category: isRequired({ message: "Please provide a category" }),
